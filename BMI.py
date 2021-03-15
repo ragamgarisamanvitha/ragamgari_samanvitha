@@ -1,0 +1,51 @@
+class BMI():
+    def __init__(self):
+        ht=int(input('Enter your height in cms : '))
+        wt=int(input('Enter your weight in kgs : '))
+        bmi=((wt/ht/ht)*10000)
+        print('Your BMI is '+str(bmi))
+        print('Healthy BMI range: 18.5 kg/m2 - 25 kg/m2')
+        if bmi<18.5:
+            print('UNDERWEIGHT')
+            print('Your Preferred Workout Regimen :  ')
+            print('Monday : Chest')
+            print('Tuesday : Biceps')
+            print('Wednesday: Rest')
+            print('Thursday: Back')
+            print('Friday: Triceps')
+            print('Saturday : Rest')
+            print('Sunday: Rest')
+
+        elif 18.5 < bmi < 24.9:
+            print('NORMAL WEIGHT')
+            print('Your Preferred Workout Regimen :  ')
+            print('Monday : Chest')
+            print('Tuesday : Biceps')
+            print('Wednesday: Cardio/Abs')
+            print('Thursday: Back')
+            print('Friday: Triceps')
+            print('Saturday : Legs')
+            print('Sunday: Rest')
+            
+        elif 25.0 < bmi < 29.9:
+            print('OVERWEIGHT')
+            print('Your Preferred Workout Regimen :  ')
+            print('Monday : Chest')
+            print('Tuesday : Biceps')
+            print('Wednesday: Abs/Cardio')
+            print('Thursday: Back')
+            print('Friday: Triceps')
+            print('Saturday : Legs')
+            print('Sunday: Cardio')
+        else:
+            print('OBESE')
+            print('Your Preferred Workout Regimen :  ')
+            print('Monday : Chest')
+            print('Tuesday : Biceps')
+            print('Wednesday: Cardio')
+            print('Thursday: Back')
+            print('Friday: Triceps')
+            print('Saturday : Cardio')
+            print('Sunday: Cardio')
+            
+BMI()
